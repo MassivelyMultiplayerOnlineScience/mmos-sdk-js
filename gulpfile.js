@@ -1,7 +1,6 @@
 'use strict';
 
 const gulp = require('gulp');
-const runSequence = require('run-sequence');
 
 const bump = require('gulp-bump');
 
@@ -19,7 +18,7 @@ gulp.task('bump', () => {
 
 gulp.task('git:add', () => {
 	return gulp.src(process.cwd())
-		.pipe(git.add({args: '--all -v'}));
+		.pipe(git.add({ args: '--all -v' }));
 });
 gulp.task('git:commit', () => {
 	return gulp.src(process.cwd())
@@ -31,12 +30,10 @@ gulp.task('git:tag', () => {
 		.pipe(wait(500));
 });
 gulp.task('git:push', (callback) => {
-	git.push('origin', 'master', {args: '-v --tags'}, () =>  {
+	git.push('origin', 'master', { args: '-v --tags' }, () => {
 		callback();
 	});
 });
 
-gulp.task('git', (callback) => {
-	runSequence('bump', 'git:add', 'git:commit', 'git:tag', 'git:push', callback);
-});
+gulp.task('git', gulp.series('bump', 'git:add', 'git:commit', 'git:tag', 'git:push'));
 
