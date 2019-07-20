@@ -1,0 +1,31 @@
+{
+	"source": ".",
+	"includes": ["\\.*lib/.*\\.js$"],
+	"excludes": [
+		"\\.*node_modules/.*\\.js$",
+		"\\.*doc/.*\\.js$",
+		"\\.*test/.*\\.js$"
+	],
+  "destination": "./doc/source/",
+  "plugins": [
+    {
+			"name": "esdoc-standard-plugin",
+			"option": {
+				"unexportedIdentifier": {"enable": true},
+				"test": {
+					"source": "./test/v2/",
+					"interfaces": ["describe", "it"],
+					"includes": ["\\.test.js$"]
+				},
+				"brand": {
+					"title": "MMOS SDK - Javascript edition",
+					"logo": "./doc/logo/mmos.jpg",
+					"description": "",
+					"repository": "https://github.com/mmos-sdk-js.git",
+					"site": "http://mmos.ch",
+					"author": "http://ch.linkedin.com/in/szantner/en"
+				}
+			}
+		}
+  ]
+}

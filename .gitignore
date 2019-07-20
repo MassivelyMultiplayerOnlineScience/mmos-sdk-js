@@ -1,0 +1,12 @@
+node_modules
+log
+coverage
+temp
+doc/source
+
+erl_crash.dump
+npm-debug.log
+
+.DS_Store
+Thumbs.db
+

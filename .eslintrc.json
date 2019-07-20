@@ -1,0 +1,18 @@
+{
+    "extends": "standard",
+    
+    "plugins": [
+        "standard",
+        "promise"
+    ],
+    "rules": {
+        "indent": ["error", "tab"],
+        "semi": ["error", "always"],
+        "padded-blocks": ["off"],
+        "space-before-function-paren": ["error", { "anonymous": "always", "named": "never" }],
+        "spaced-comment": ["off"],
+        "no-multiple-empty-lines": ["error", { "max": 10, "maxEOF": 1 }],
+        "eol-last": "off",
+        "no-tabs": "off"
+    }
+}
