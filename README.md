@@ -78,9 +78,9 @@ After setting the following environment variables you can run the `npm run test:
 
 ## Authentication
 
-Please see the [authentication docs](doc/authentication/api-hmac-authentication.md) for details. The
+Please see the [authentication docs](doc/authentication/api-hmac-authentication.md) for details.
 
-## Acknowlegdments
+## Acknowledgments
 
 This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement Nr 732703
 
