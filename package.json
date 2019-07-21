@@ -1,6 +1,6 @@
 {
   "name": "mmos-sdk-js",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "license": "MIT",
   "description": "Massively Multiplayer Online Science - Citizen Science API client - Javascript SDK, © 2015-19 MMOS Sàrl",
   "homepage": "http://mmos.ch",
@@ -12,7 +12,6 @@
     "type": "git",
     "url": "https://github.com/MassivelyMultiplayerOnlineScience/mmos-sdk-js-archive.git"
   },
-  "private": true,
   "dependencies": {
     "bunyan": "~1.8.12",
     "lodash": "~4.17.15"
