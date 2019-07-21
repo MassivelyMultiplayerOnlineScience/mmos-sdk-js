@@ -1,6 +1,6 @@
 {
   "name": "mmos-sdk-js",
-  "version": "2.1.2",
+  "version": "2.1.0",
   "license": "MIT",
   "description": "Massively Multiplayer Online Science - Citizen Science API client - Javascript SDK, © 2015-19 MMOS Sàrl",
   "homepage": "http://mmos.ch",
@@ -41,6 +41,7 @@
     "sinon": "~7.3.2"
   },
   "scripts": {
+    "test": "npm run test:v2",
     "test:v2": "NODE_ENV=test node_modules/.bin/mocha --timeout 15000 \"test/index.js\" \"test/v2/**/*.test.js\"",
     "test:v2:dev": "NODE_ENV=test nodemon node_modules/.bin/mocha --no-exit -c --growl test/v2/",
     "doc:source": "esdoc"

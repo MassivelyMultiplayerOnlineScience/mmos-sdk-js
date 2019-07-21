@@ -74,7 +74,7 @@ $ export MMOS_SDK_TEST_GAME=my-game
 $ npm run test:v2
 ```
 
-After setting the following environment variables you can run the `npm run test:v2` command to run the automated tests
+After setting the following environment variables you can run the `npm run test` command to run the automated tests
 
 ## Authentication
 
