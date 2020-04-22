@@ -6,6 +6,8 @@
     "editor.renderIndentGuides": true,
     "editor.trimAutoWhitespace": true,
     "editor.insertSpaces": false,
-    "eslint.autoFixOnSave": true,
-    "editor.detectIndentation": false
+		"editor.detectIndentation": false,
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": true
+		}
 }
