@@ -37,3 +37,4 @@ gulp.task('git:push', (callback) => {
 
 gulp.task('git', gulp.series('git:add', 'git:commit', 'git:tag', 'git:push'));
 
+gulp.task('release', gulp.series('bump', 'git'));
