@@ -2,12 +2,12 @@
 {
     "editor.tabSize": 2,
     "editor.renderWhitespace": "boundary",
-    "editor.renderControlCharacters": true,
-    "editor.renderIndentGuides": true,
+		"editor.renderControlCharacters": true,
     "editor.trimAutoWhitespace": true,
     "editor.insertSpaces": false,
 		"editor.detectIndentation": false,
 		"editor.codeActionsOnSave": {
 			"source.fixAll.eslint": true
-		}
+		},
+		"editor.guides.indentation": true
 }
