@@ -57,12 +57,13 @@ Once the account is created, there are three environment variables that need to 
 * MMOS_SDK_TEST_API_KEY - The MMOS API Key
 * MMOS_SDK_TEST_API_SECRET - The MMOS API Secret
 * MMOS_SDK_TEST_GAME - The game id that is generated from your email address
-
+* MMOS_SDK_API_HOST - Api host URL
 Windows example:
 ```bat
 $ SET MMOS_SDK_TEST_API_KEY=apiKey
 $ SET MMOS_SDK_TEST_API_SECRET=secret
 $ SET MMOS_SDK_TEST_GAME=my-game
+$ SET MMOS_SDK_API_HOST=api.depo.mmos.blue
 $ npm run test:v2
 ```
 
@@ -71,6 +72,7 @@ Linux example:
 $ export MMOS_SDK_TEST_API_KEY=apiKey
 $ export MMOS_SDK_TEST_API_SECRET=secret
 $ export MMOS_SDK_TEST_GAME=my-game
+$ export MMOS_SDK_API_HOST=api.depo.mmos.blue
 $ npm run test:v2
 ```
 

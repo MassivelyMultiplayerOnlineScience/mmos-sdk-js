@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	host: 'api.depo.mmos.blue',
+	host: process.env.MMOS_SDK_API_HOST,
 	apiKey: process.env.MMOS_SDK_TEST_API_KEY,
 	apiSecret: process.env.MMOS_SDK_TEST_API_SECRET,
 	game: process.env.MMOS_SDK_TEST_GAME,
